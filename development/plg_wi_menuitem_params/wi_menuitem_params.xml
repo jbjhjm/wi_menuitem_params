@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.8" type="plugin" group="content">
+
+	<name>wi_menuitem_params</name>
+	<author><%= author %></author>
+	<creationDate><%= grunt.template.today('yyyy-mm-dd') %></creationDate>
+	<copyright>Copyright © <%= grunt.template.today('yyyy') %>, <%= author %>, All Rights Reserved.</copyright>
+	<license><%= license %></license>
+	<authorEmail><%= author %></authorEmail>
+	<authorUrl><%= author_url %></authorUrl>
+	<version><%= version %></version>
+	<description><%= descr %></description>
+
+	<files>
+		<folder>forms</folder>
+		<filename plugin="wi_menuitem_params">wi_menuitem_params.php</filename>
+	</files>
+
+	<config>
+	</config>
+
+</extension>

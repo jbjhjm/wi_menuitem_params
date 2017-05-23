@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="params">
+        <fieldset name="params" label="WI Custom Params">
+
+			<field name="wi_header_size" type="radio"
+				class="btn-group"
+				label="Header Size"
+				description="Header Size"
+				default="small" filter="word"
+			>
+				<option value="fullscreen">Fullscreen</option>
+				<option value="medium">Medium</option>
+				<option value="small">Klein</option>
+			</field>
+
+            <field name="bgimage" type="media" label="Header Image" directory="headers" />
+            <field name="param2" type="text" label="lblText2"/>
+
+        </fieldset>
+    </fields>
+</form>
