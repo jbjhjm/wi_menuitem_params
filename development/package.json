@@ -2,27 +2,24 @@
 	"name": "wi_menuitem_params",
 	"version": "1.0.0",
 	"copyright": "Jannik Mewes / Wolf Interactive",
-
 	"author": "Jannik Mewes / Wolf Interactive",
 	"author_email": "jm@wolfinteractive.de",
 	"author_url": "http://wolfinteractive.de",
 	"license": "http://www.gnu.org/copyleft/gpl.html GNU/GPL",
-
 	"prefix": "wi_mp",
 	"id": "wi_menuitem_params",
 	"camel": "wiMenuitemParams",
 	"title": "Wolf Interactive - Custom Fields for menu items",
 	"descr": "Custom Fields for menu items",
-
 	"devDependencies": {
 		"grunt": "~0.4.1",
-		"grunt-contrib-copy": "~1.0.0",
-		"grunt-contrib-concat": "~1.0.1",
+		"grunt-contrib-clean": "~1.1.0",
 		"grunt-contrib-compress": "~1.4.1",
-        "grunt-contrib-cssmin" : "~2.0.0",
-        "grunt-contrib-watch" : "~1.0.0",
-        "grunt-contrib-less" : "~1.4.1",
-        "grunt-contrib-uglify" : "~2.3.0",
-        "grunt-contrib-clean" : "~1.1.0"
+		"grunt-contrib-concat": "~1.0.1",
+		"grunt-contrib-copy": "~1.0.0",
+		"grunt-contrib-cssmin": "~2.0.0",
+		"grunt-contrib-less": "~1.4.1",
+		"grunt-contrib-uglify": "~2.3.0",
+		"grunt-contrib-watch": "^1.1.0"
 	}
 }

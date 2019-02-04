@@ -3,3 +3,4 @@ development/node_modules/
 release/
 media/
 staging/
+build/
