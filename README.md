@@ -2,7 +2,7 @@
 This plugin enables you to add custom parameters to joomla menu items and access them anywhere you want, e.g. in a custom template.
 
 # Building
-`git clone https://github.com/jbjhjm/wi_menuitem_params.git`
+Make sure [https://nodejs.org/en/download/](NodeJS) is installed, then download or clone the repository: `git clone https://github.com/jbjhjm/wi_menuitem_params.git`
 
 Change to development directory and run `npm install`.
 
