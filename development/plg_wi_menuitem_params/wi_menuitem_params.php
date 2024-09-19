@@ -1,11 +1,18 @@
 <?php
 <%= phpbanner %>
 
-class plgContentWi_menuitem_params extends JPlugin {
+use Joomla\CMS\Plugin\CMSPlugin;
+use Joomla\CMS\Language\Text;
+use Joomla\CMS\Factory;
+use Joomla\CMS\Form;
 
-    function onContentPrepareForm($form, $data) {
+class PlgContentWi_menuitem_params extends CMSPlugin {
 
-        $app = JFactory::getApplication();
+	var $enabled = true;
+
+	function onContentPrepareForm($form, $data) {
+
+        $app = Factory::getApplication();
         $option = $app->input->get('option');
         $view = $app->input->get('view');
 
@@ -13,7 +20,7 @@ class plgContentWi_menuitem_params extends JPlugin {
 
                 case 'com_menus': {
                     if ($app->isAdmin()) {
-                            JForm::addFormPath(__DIR__ . '/forms');
+                            Form::addFormPath(__DIR__ . '/forms');
                             $form->loadFile('item', false);
                     }
                     return true;
@@ -29,7 +36,8 @@ class plgContentWi_menuitem_params extends JPlugin {
 
         // copy into template or whereever you need to get the params
 
-        $activeMenuItem = $app->getMenu()->getActive();
+		$app = Factory::getApplication();
+		$activeMenuItem = $app->getMenu()->getActive();
 		if(!$activeMenuItem) $activeMenuItem = $app->getMenu()->getDefault();
         $my_custom_param = $activeMenuItem->params->get('my_custom_param','default value');
 
